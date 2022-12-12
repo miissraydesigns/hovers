@@ -1,0 +1,179 @@
+/****************** Global Styles *******************/
+.is-flex {
+	display: flex;
+}
+
+body {
+	background-color: #f2cac5;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+}
+
+
+.row {
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+img {
+	max-width: 280px;
+    max-height: 280px;
+}
+
+/*************** Hover & Transforms ***************/
+.container::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: whitesmoke;
+	z-index: 10;
+	opacity: 1;
+	position: absolute;
+	transition: all 2s ease;
+	transition-timing-function: cubic-bezier(.22,.6,.83,.67);
+	transform: skew(0deg);
+}
+
+.container:hover::before {
+	transform: skew(90deg);
+}
+
+.computer::before {
+	content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #f2c401;
+    opacity: 1;
+    transition: all 0.50s ease;
+    z-index: 2;
+    transform: translate(-250px, -239px) rotate(45deg);
+  }
+
+.computer:hover::before {
+	transform: translate(-414px, -370px) rotate(45deg);
+}
+
+.trees::after {
+    content: "";
+    width: 140px;
+    height: 280px;
+    background-color: #4a6c3a;
+    position: absolute;
+    left: 420px;
+	transform: translate(0,0);
+	transition: all 0.50s ease;
+}
+
+.trees:hover::after {
+	transform: translate(150px,0);
+}
+
+.insta::after {
+    content: "";
+    width: 280px;
+    height: 140px;
+    background-color: #ed6c8b;
+    position: absolute;
+	left: 0px;
+    top: 424px;
+	transform: translate(0,0);
+	transition: all 0.50s ease;
+}
+
+.insta:hover::after {
+	transform: translate(-290px, 0px);
+}
+
+.cam::after {
+	content: "";
+    width: 140px;
+    height: 280px;
+    background-color: #fff2d6;
+    position: absolute;
+    left: 280px;
+    top: 285px;
+    transform: translate(0,0);
+	transition: all 0.50s ease;
+}
+
+.cam:hover::after {
+	transform: translate(0px,285px);
+}
+
+/***************** Title Transform ***************/
+
+/***************** FONT STYLES *******************/
+h1 {
+	position: absolute;
+    right: 106px;
+    bottom: 220px;
+	font-size: 55px;
+    z-index: 11;
+    text-transform: uppercase;
+	opacity: 1;
+	transition: all 2s;
+	transition-timing-function: cubic-bezier(.28,.68,.9,-0.2);
+}
+
+.container:hover h1 {
+	opacity: 0;
+}
+
+h2 {
+	letter-spacing: 6px;
+    opacity: 1;
+    color: black;
+    position: absolute;
+	transition: all .8s ease;
+	z-index: 4;
+}
+
+.computer:hover h2 {
+	opacity: .5;
+}
+
+.trees:hover h2 {
+	opacity: .5;
+}
+
+.insta:hover h2 {
+	opacity: .5;
+}
+
+.cam:hover h2 {
+	opacity: .5;
+}
+
+.web {
+	color: white;
+    left: 28px;
+    bottom: 391px;
+	z-index: 2;
+	transition: all 0.25s;
+}
+
+.photog {
+	bottom: 391px;
+    right: 53px;
+	color: white;
+}
+
+.graphic {
+	left: 37px;
+    bottom: 105px;
+}
+
+.product {
+	left: 315px;
+    bottom: 105px;
+}

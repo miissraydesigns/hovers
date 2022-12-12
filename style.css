@@ -6,10 +6,10 @@
 body {
 	background-color: #f2cac5;
 	height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	font-family: 'Bebas Neue';
+   	 display: flex;
+    	justify-content: center;
+    	align-items: center;
+	font-family: 'sans serif';
 }
 
 .container {
@@ -64,12 +64,12 @@ img {
 }
 
 .trees::after {
-    content: "";
-    width: 140px;
-    height: 280px;
-    background-color: #4a6c3a;
-    position: absolute;
-    left: 420px;
+    	content: "";
+    	width: 140px;
+    	height: 280px;
+    	background-color: #4a6c3a;
+    	position: absolute;
+    	left: 420px;
 	transform: translate(0,0);
 	transition: all 0.50s ease;
 }
@@ -79,13 +79,13 @@ img {
 }
 
 .insta::after {
-    content: "";
-    width: 280px;
-    height: 140px;
-    background-color: #ed6c8b;
-    position: absolute;
+    	content: "";
+    	width: 280px;
+    	height: 140px;
+    	background-color: #ed6c8b;
+    	position: absolute;
 	left: 0px;
-    top: 424px;
+    	top: 424px;
 	transform: translate(0,0);
 	transition: all 0.50s ease;
 }
@@ -96,13 +96,13 @@ img {
 
 .cam::after {
 	content: "";
-    width: 140px;
-    height: 280px;
-    background-color: #fff2d6;
-    position: absolute;
-    left: 280px;
-    top: 285px;
-    transform: translate(0,0);
+    	width: 140px;
+    	height: 280px;
+    	background-color: #fff2d6;
+    	position: absolute;
+    	left: 280px;
+    	top: 285px;
+    	transform: translate(0,0);
 	transition: all 0.50s ease;
 }
 
@@ -115,11 +115,11 @@ img {
 /***************** FONT STYLES *******************/
 h1 {
 	position: absolute;
-    right: 106px;
-    bottom: 220px;
+    	right: 106px;
+    	bottom: 220px;
 	font-size: 55px;
-    z-index: 11;
-    text-transform: uppercase;
+    	z-index: 11;
+    	text-transform: uppercase;
 	opacity: 1;
 	transition: all 2s;
 	transition-timing-function: cubic-bezier(.28,.68,.9,-0.2);
@@ -131,9 +131,9 @@ h1 {
 
 h2 {
 	letter-spacing: 6px;
-    opacity: 1;
-    color: black;
-    position: absolute;
+    	opacity: 1;
+    	color: black;
+    	position: absolute;
 	transition: all .8s ease;
 	z-index: 4;
 }
@@ -156,24 +156,24 @@ h2 {
 
 .web {
 	color: white;
-    left: 28px;
-    bottom: 391px;
+    	left: 28px;
+    	bottom: 391px;
 	z-index: 2;
 	transition: all 0.25s;
 }
 
 .photog {
 	bottom: 391px;
-    right: 53px;
+    	right: 53px;
 	color: white;
 }
 
 .graphic {
 	left: 37px;
-    bottom: 105px;
+    	bottom: 105px;
 }
 
 .product {
 	left: 315px;
-    bottom: 105px;
+    	bottom: 105px;
 }
